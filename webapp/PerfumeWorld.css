@@ -1,0 +1,333 @@
+/*HEADER LOGO*/
+header {
+    position: sticky; /*to stick the header in front of the interface while scrolling*/
+    top: 0;
+    width: 100%;
+    z-index: 2000;
+    margin-bottom: -10px; /*to eliminate the space between divs*/
+    background-color: white;
+}
+
+#h1 {
+	display: block;
+	font-size: 3em;
+	margin-top: 0.67em;
+	margin-bottom: 0.67em;
+	margin-left: 0;
+	margin-right: 0;
+    color: rgba(0,0,0, 0.84);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px 16px white, 50px 20px 0px rgba(255, 127, 80, 0.4), -50px -20px 0px rgba(255, 127, 80, 0.2);
+    text-align: center;
+    font-weight: 900;
+}
+
+header a:hover {
+    text-decoration: none;
+}
+
+/*HEADER NAVIGATION BAR*/
+#menu {
+    position: initial; /*to set relationship between menu and submenu position*/
+    letter-spacing: 3px;
+}
+
+#menu ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: black;
+}
+
+#menu li {
+    display: inline-block;
+    position: relative;
+    height: 45px;
+    width: 190px;
+    line-height: 45px;
+    z-index: index;
+}
+
+#menu a {
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+#menu a:hover {
+    background: coral;
+    color: black;
+}
+
+/*HEADER NAVIGATION BAR DROPDOWN*/
+.sub-menu {
+    display: none; /*to show up while hovering*/
+    position: absolute;
+    z-index: 2; /*to appear before the menu*/
+}
+
+.sub-menu li {
+    overflow: visible;
+}
+
+#menu li:hover .sub-menu {
+    display: block;
+}
+
+/*BODY CAROUSEL*/
+.carousel-inner {
+    height: 700px;
+}
+
+.aspect-ratio-169 {
+    display: block;
+    position: relative;
+    padding-top: 56.25%;
+}
+
+.aspect-ratio-169 img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -30px;
+    left: 0;
+}
+
+.carousel-caption h2 {
+    letter-spacing: 3px;
+}
+
+.carousel-caption p {
+    display: inline-block;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+#carousel-description, #carousel-background {
+    margin-left: -375px;
+    margin-bottom: 320px; /*move up the black opacity*/
+    padding-top: 605px; /*create space above the header*/
+    padding-bottom: 130px; /*create space below the header*/
+}
+
+#carousel-background {
+    background-color: black;
+    opacity: 0.4;
+    width: 5000px;
+    margin-left: -385px;
+}
+
+/*BODY MATERIALS*/
+#black-div {
+    height: auto;
+    background-color: black;
+    padding-top: 232px;
+    padding-bottom: 232px;
+}
+
+#black-div-description {
+    text-align: center;
+    color: white;
+}
+
+#categories { /*for titles in the body*/
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 16px black, 50px 20px 0px rgba(255, 127, 80, 0.3), -50px -20px 0px rgba(255, 127, 80, 0.2);
+}
+
+#registration, #login, #feedback { /*for form*/
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+::placeholder, #country { /*for form elements*/
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 1;
+    font-weight: bold;
+}
+
+#maps { /*for maps*/
+    height: 500px;
+    width: 100%;
+    opacity: 0.4;
+}
+
+#map1, #map2 {
+    display: none;
+}
+
+#black-div-description a { /*for links in general*/
+    color: white;
+}
+
+#black-div-description a:hover, #black-div-description a:active {
+    color: coral;
+    text-decoration: none;
+}
+
+/*BODY TABLE*/
+#table {
+	width: 1000px;
+    margin-left: 500px;
+	border-collapse: collapse;
+}
+
+#table td {
+    padding: 20px;
+}
+
+/*FOOTER*/
+.site-footer {
+    background-color: black;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    line-height: 30px;
+    color:white;
+}
+
+.site-footer h6 {
+    color: white;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+.site-footer .col-sm-6 {
+    padding-left: 210px;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links a {
+    color: white;
+    font-size: 12px;
+}
+
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover {
+    color: coral;
+    text-decoration: none;
+}
+
+#about-us-footer {
+    color: white;
+    text-decoration: none;
+}
+
+#about-us-last-line {
+    color: black;
+    text-decoration: none;
+}
+
+#about-us-last-line:hover, #about-us-footer:hover {
+    color: coral;
+    text-decoration: none;
+}
+
+#footer-last-line {
+	text-align: center;
+}
+
+#footer-logo {
+    height:100px;
+    opacity: 0.7;
+}
+
+#footer-logo:hover {
+    opacity: 1;
+}
+
+/*BACKGROUND MODAL*/
+.modal-dialog {
+    width: 1000px;
+    padding-top: 300px;
+}
+
+.modal-backdrop {
+    position: relative; /*position relationship with dialog*/
+}
+
+.modal-title {
+    letter-spacing: 3px;
+}
+
+/*BACKGROUND BUTTON*/
+
+.btn.btn-default {
+    letter-spacing: 3px;
+    height: 40px;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+.btn.btn-default:hover, .btn.btn-defaultn:active {
+    background-color: coral;
+    border: 0;
+}
+
+/*BACKGROUND ICON*/
+#icon-right { /*for header*/
+    margin-left: 360px;
+    margin-top: 22px;
+}
+
+#icon-right a, #icon-left a {
+    color: black;
+    display: block;
+    padding: 10px;
+}
+
+#icon-right a:active, #icon-left a:active {
+    box-shadow: none;
+}
+
+#icon-right a:hover, #icon-left a:hover {
+    background: white;
+    color: coral;
+    display: block;
+}
+
+.glyphicon.glyphicon-menu-left, .glyphicon.glyphicon-menu-right {
+    font-size: 30px; /*for carousel*/
+    top: 335px;
+}
+
+.glyphicon.glyphicon-menu-left {
+    left: -50px;
+}
+
+.glyphicon.glyphicon-menu-right {
+    right: -50px;
+}
+
+/*BACKGROUND MATERIALS*/
+.parallax {
+    /* The image used */
+    background-image: url('../webapp/image/background/bg.jpg');
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div {
+    width:100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
