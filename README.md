@@ -14,4 +14,6 @@ Backend Code https://github.com/QuyenNguyen000/PerfumeWorld/tree/main/java/proje
 
 Frontend Code https://github.com/QuyenNguyen000/PerfumeWorld/tree/main/webapp
 
-The website
+Published Website
+
+Thank you for visiting.
